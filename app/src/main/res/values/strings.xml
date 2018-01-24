@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InventoryMobileApp</string>
+    <string name="buttonAcknowledge">Acknowledge Disbursement</string>
 </resources>
