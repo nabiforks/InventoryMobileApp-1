@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">InventoryMobileApp</string>
     <string name="buttonAcknowledge">Acknowledge Disbursement</string>
+    <string name="CpName">Collection Point</string>
+    <string name="DeptName">Department Name</string>
+    <string name="RepName">Representative Name</string>
+    <string name="DisburseCode">Disbursement Code</string>
+    <string name="Status">Status</string>
+    <string name="Item">Item Name</string>
+    <string name="NeededQuantity">Needed Quantity</string>
+    <string name="ActualQuantiy">Actual Quantity</string>
+    <string name="DisbursementList">Disbursement List</string>
+    <string name="DisbursementDetails">Disbursement Details</string>
 </resources>

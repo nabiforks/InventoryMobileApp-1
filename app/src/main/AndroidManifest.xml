@@ -14,12 +14,13 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListDisbursementActivity" />
-        <activity android:name=".DisbursementDetailsActivity"></activity>
+        <activity android:name=".ListDisbursementActivity"
+            android:label="@string/DisbursementList"/>
+        <activity android:name=".DisbursementDetailsActivity"
+            android:label="@string/DisbursementDetails"></activity>
     </application>
 
 </manifest>

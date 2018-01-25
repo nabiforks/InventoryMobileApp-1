@@ -1,14 +1,14 @@
-package team8.inventorymobileapp.com.inventorymobileapp;
+package team8.inventorymobileapp.com.inventorymobileapp.Entities;
 
 import android.util.Log;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+
+import team8.inventorymobileapp.com.inventorymobileapp.JSONParser;
 
 /**
  * Created by Trang Pham on 1/24/2018.
@@ -16,7 +16,6 @@ import java.util.List;
 
 public class Disbursement extends HashMap<String, String> {
     final static String ListDisbursementURL = "http://172.20.10.4/InventoryWCF/WCF/EmployeeService.svc/ListDisbursement";
-
 
     public Disbursement(String DisbursementCode, String DepartmentName, String Status) {
         put("DisbursementCode", DisbursementCode);

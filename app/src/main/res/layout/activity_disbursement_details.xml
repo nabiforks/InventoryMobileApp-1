@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:stretchColumns="1">
 
         <TableRow
@@ -18,17 +17,18 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tvCpName"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Collection Point Name:"
-                android:textSize="18sp" />
+                android:text="@string/CpName"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvCollectionPointName"
+                android:id="@+id/tvCollectionPoint"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
+                android:layout_height="27dp"
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -36,16 +36,18 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tvDeptName"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Department Name:"
-                android:textSize="18sp" />
+                android:text="@string/DeptName"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvDepartmentName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvDepartmentName" />
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -53,16 +55,18 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tvDisburseCode"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Disbursement Number"
-                android:textSize="18sp" />
+                android:text="@string/RepName"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvReprsentativeName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvDisbursementNumber" />
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -70,46 +74,51 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tvRepName"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Representative"
-                android:textSize="18sp" />
+                android:text="@string/DisburseCode"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvDisbursementNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvReprsentativeName" />
+                android:textSize="18sp" />
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tvStatus"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Status"
-                android:textSize="18sp" />
+                android:text="@string/Status"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvstatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvstatus" />
-        </TableRow>
-        <TableRow
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <GridView
-                android:id="@+id/gvStationery"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:numColumns="2"/>
+                android:textSize="18sp" />
+
+
         </TableRow>
     </TableLayout>
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <Button
         android:id="@+id/button"
-        android:layout_width="100dp"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:text="@string/buttonAcknowledge" />
+
 </LinearLayout>
