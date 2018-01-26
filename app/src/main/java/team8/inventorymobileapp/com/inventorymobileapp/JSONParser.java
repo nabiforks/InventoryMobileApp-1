@@ -92,6 +92,29 @@ public class JSONParser {
         return readStream(is);
     }
 
+//
+//    public static void postStream(JSONObject o,String url ) {
+//        InputStream is = null;
+//        String data=o.toString();
+//        try {
+//            URL u = new URL(url);
+//            HttpURLConnection conn = (HttpURLConnection) u.openConnection();
+//            conn.setRequestMethod("POST");
+//            conn.setDoInput(true);
+//            conn.setDoOutput(true);
+//            conn.setRequestProperty("Accept", "application/json");
+//            conn.setRequestProperty("Content-type", "application/json");
+//            conn.setFixedLengthStreamingMode(data.getBytes().length);
+//            conn.connect();
+//            OutputStream os = new BufferedOutputStream(conn.getOutputStream());
+//            os.write(data.getBytes());
+//            os.flush();
+//            is = conn.getInputStream();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+
     public static JSONObject getJSONFromUrl(String url) {
         JSONObject jObj = null;
         try {

@@ -17,6 +17,7 @@ import team8.inventorymobileapp.com.inventorymobileapp.JSONParser;
 public class DisbursementDetails extends HashMap<String, String> {
 
     final static String DisbursementDetailsURL = "http://172.20.10.4/InventoryWCF/WCF/EmployeeService.svc/DisbursementDetails";
+   // final static String UpdateDisbursementURL = "http://172.20.10.4/InventoryWCF/WCF/EmployeeService.svc/UpdateDisbursement";
 
     public DisbursementDetails(String DisbursementCode, String CollectionPointName, String NeededQuantity, String DepartmentName , String RepName, String Status,
                                String ActualQuantity, String ItemDescription ) {

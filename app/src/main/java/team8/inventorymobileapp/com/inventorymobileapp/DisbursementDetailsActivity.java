@@ -4,13 +4,16 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import team8.inventorymobileapp.com.inventorymobileapp.Entities.Disbursement;
 import team8.inventorymobileapp.com.inventorymobileapp.Entities.DisbursementDetails;
 
 public class DisbursementDetailsActivity extends AppCompatActivity {
@@ -24,7 +27,7 @@ public class DisbursementDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_disbursement_details);
 
         final ListView lv = (ListView) findViewById(R.id.listview1);
-        ViewGroup headerView = (ViewGroup)getLayoutInflater().inflate(R.layout.headerlayout, lv,false);
+        ViewGroup headerView = (ViewGroup) getLayoutInflater().inflate(R.layout.headerlayout, lv, false);
         lv.addHeaderView(headerView);
         //get Disbursement Code from the previous page
         Intent i = getIntent();
@@ -52,5 +55,32 @@ public class DisbursementDetailsActivity extends AppCompatActivity {
                 }
             }.execute(id);
         }
+
+      Button btnAcknowledge = findViewById(R.id.button);
+      btnAcknowledge.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Disbursement disbursement = new Disbursement();
+              disbursement.put("Status","completed");
+              disbursement.put("DisbursementCode",id);
+              disbursement.put("RepName","yufei@logic.edu.sg");
+              new AsyncTask<Disbursement, Void, Void>() {
+                  @Override
+                  protected  Void doInBackground(Disbursement... params)
+                  {
+                      Disbursement.UpdateDisbursement(params[0]);
+                      return null;
+                  }
+                  @Override
+                  protected void onPostExecute(Void result)
+                  {
+                      super.onPostExecute(result);
+                      Intent intent = new Intent(getApplicationContext(), ListDisbursementActivity.class);
+                      startActivity(intent);
+                        finish();
+                  }
+              }.execute(disbursement);
+          }
+      });
     }
 }

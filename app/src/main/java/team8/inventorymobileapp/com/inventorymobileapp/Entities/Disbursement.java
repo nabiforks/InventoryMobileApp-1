@@ -16,6 +16,7 @@ import team8.inventorymobileapp.com.inventorymobileapp.JSONParser;
 
 public class Disbursement extends HashMap<String, String> {
     final static String ListDisbursementURL = "http://172.20.10.4/InventoryWCF/WCF/EmployeeService.svc/ListDisbursement";
+    final static String UpdateDisbursementURL = "http://172.20.10.4/InventoryWCF/WCF/EmployeeService.svc/UpdateDisbursement";
 
     public Disbursement(String DisbursementCode, String DepartmentName, String Status) {
         put("DisbursementCode", DisbursementCode);
@@ -39,5 +40,20 @@ public class Disbursement extends HashMap<String, String> {
             Log.e("Disbursement.dList()", "JSONArray error");
         }
         return (list);
+    }
+    public static void UpdateDisbursement(Disbursement disbursement)
+    {
+        JSONObject object = new JSONObject();
+        try{
+            object.put("DisbursementCode", disbursement.get("DisbursementCode"));
+            object.put("DepartmentName", disbursement.get("DepartmentName"));
+            object.put("Status", disbursement.get("Status"));
+
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        String result =  JSONParser.postStream( UpdateDisbursementURL, object.toString());
     }
 }
