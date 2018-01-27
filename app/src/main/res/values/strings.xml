@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">InventoryMobileApp</string>
+
+
+
+
+        <string name="AdjustmentCode">Adjustment Code:</string>
+        <string name="ItemCode">Item Code:</string>
+        <string name="Price">Price:</string>
+        <string name="AdjustmentQuant">Adjust Quantity:</string>
+    <string name="Reason">Reason</string>
+    <string name="Remark">Remark</string>
+    <string name="Stock">Stock</string>
+    <string name="Approve">Approve</string>
+    <string name="Reject">Reject</string>
+
+
 </resources>
