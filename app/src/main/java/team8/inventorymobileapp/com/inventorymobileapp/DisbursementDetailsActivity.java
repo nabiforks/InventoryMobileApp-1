@@ -61,9 +61,9 @@ public class DisbursementDetailsActivity extends AppCompatActivity {
           @Override
           public void onClick(View view) {
               Disbursement disbursement = new Disbursement();
-              disbursement.put("Status","completed");
+              disbursement.put("Status", "completed");
               disbursement.put("DisbursementCode",id);
-              disbursement.put("RepName","yufei@logic.edu.sg");
+              disbursement.put("RepName", "yufei@logic.edu.sg");
               new AsyncTask<Disbursement, Void, Void>() {
                   @Override
                   protected  Void doInBackground(Disbursement... params)

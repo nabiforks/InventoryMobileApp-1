@@ -15,13 +15,14 @@ import team8.inventorymobileapp.com.inventorymobileapp.JSONParser;
  */
 
 public class Disbursement extends HashMap<String, String> {
-    final static String ListDisbursementURL = "http://172.20.10.4/InventoryWCF/WCF/EmployeeService.svc/ListDisbursement";
-    final static String UpdateDisbursementURL = "http://172.20.10.4/InventoryWCF/WCF/EmployeeService.svc/UpdateDisbursement";
+    final static String ListDisbursementURL = "http://192.168.1.225/InventoryWCF/WCF/EmployeeService.svc/ListDisbursement";
+    final static String UpdateDisbursementURL = "http://192.168.1.225/InventoryWCF/WCF/EmployeeService.svc/UpdateDisbursement";
 
-    public Disbursement(String DisbursementCode, String DepartmentName, String Status) {
+    public Disbursement(String DisbursementCode, String DepartmentName, String Status, String RepName) {
         put("DisbursementCode", DisbursementCode);
         put("DepartmentName", DepartmentName);
         put("Status", Status);
+        put("RepName", RepName);
     }
     public Disbursement(){}
 
@@ -34,7 +35,8 @@ public class Disbursement extends HashMap<String, String> {
                 list.add(new Disbursement(
                         b.getString("DisbursementCode"),
                         b.getString("DepartmentName"),
-                        b.getString("Status")));
+                        b.getString("Status"),
+                        b.getString("RepName")));
             }
         } catch (Exception e) {
             Log.e("Disbursement.dList()", "JSONArray error");
@@ -46,8 +48,9 @@ public class Disbursement extends HashMap<String, String> {
         JSONObject object = new JSONObject();
         try{
             object.put("DisbursementCode", disbursement.get("DisbursementCode"));
-            object.put("DepartmentName", disbursement.get("DepartmentName"));
+//            object.put("DepartmentName", disbursement.get("DepartmentName"));
             object.put("Status", disbursement.get("Status"));
+            object.put("RepName", disbursement.get("RepName"));
 
         }
         catch (Exception e)
