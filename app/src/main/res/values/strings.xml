@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">InventoryMobileApp</string>
+    <string name="title_activity_list_req">Pending Request</string>
+    <string name="title_activity_request_detail">Request Detail</string>
+    <string name="btnApprove">Approve</string>
+    <string name="btnReject">Reject</string>
+    <string name="Remark">You can add some remark here:</string>
 </resources>
