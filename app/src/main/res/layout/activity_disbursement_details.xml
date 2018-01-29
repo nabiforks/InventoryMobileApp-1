@@ -1,124 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:scrollbars="vertical">
 
-    <TableLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:stretchColumns="1">
+        android:layout_height="match_parent">
 
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TextView
-
-                android:layout_width="wrap_content"
+            <TableLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/CpName"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:stretchColumns="1">
 
-            <TextView
-                android:id="@+id/tvCollectionPoint"
-                android:layout_width="wrap_content"
-                android:layout_height="27dp"
-                android:textSize="18sp" />
-        </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
 
-            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/CpName"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/DeptName"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvCollectionPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:textSize="18sp" />
+                </TableRow>
 
-            <TextView
-                android:id="@+id/tvDepartmentName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp" />
-        </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
 
-            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DeptName"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/RepName"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvDepartmentName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp" />
+                </TableRow>
 
-            <TextView
-                android:id="@+id/tvReprsentativeName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp" />
-        </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
 
-            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/RepName"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/DisburseCode"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvReprsentativeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp" />
+                </TableRow>
 
-            <TextView
-                android:id="@+id/tvDisbursementNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp" />
-        </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
 
-            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DisburseCode"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Status"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvDisbursementNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp" />
+                </TableRow>
 
-            <TextView
-                android:id="@+id/tvstatus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Status"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvstatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp" />
 
 
-        </TableRow>
-    </TableLayout>
+                </TableRow>
+            </TableLayout>
 
-    <ListView
-        android:id="@+id/listview1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <ListView
+                android:id="@+id/listview1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:text="@string/buttonAcknowledge" />
-
+            <Button
+                android:id="@+id/button"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/buttonAcknowledge"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
