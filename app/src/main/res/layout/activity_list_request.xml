@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="team8.inventorymobileapp.com.inventorymobileapp.DepartmentHead.ListRequestActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="Request"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

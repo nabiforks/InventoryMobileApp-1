@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    tools:context="team8.inventorymobileapp.com.inventorymobileapp.DisbursementGenerationActivity">
+
+    <TextView
+        android:id="@+id/dgTvwLabel"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Plan to Collect Date"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+    <EditText
+        android:id="@+id/dgEtxCollectionDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:enabled="false"
+        android:textSize="22dp" />
+    <TextView
+        android:id="@+id/dgTvwNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+    <Button
+        android:id="@+id/dgBtnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="5dp"
+        android:text="Proceed to Disbursment Form>"
+        android:textSize="16dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="team8.inventorymobileapp.com.inventorymobileapp.RetrievalListActivity">
+    <TextView
+        android:id="@+id/rfaNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:layout_marginRight="55dp"/>
+    <TextView
+        android:id="@+id/rfaTvRetrieved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Retrieved /"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:layout_marginRight="55dp"/>
+
+    <TextView
+        android:id="@+id/rfaTvNeeded"
+        android:layout_width="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text=" Needed"/>
+    <!--<TextView
+        android:id="@+id/rfatv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrieved / Needed"
+        app:layout_constraintBottom_toTopOf="@id/lvRetrieval"
+        app:layout_constraintRight_toLeftOf="parent" />-->
+
+    <ListView
+        android:id="@+id/lvRetrieval"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        app:layout_constraintTop_toBottomOf="@id/rfaTvRetrieved"></ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm retrieval>"
+        android:id="@+id/btnConfirmRetrieval"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="5dp"
+        android:padding="3dp"
+        />
+</android.support.constraint.ConstraintLayout>

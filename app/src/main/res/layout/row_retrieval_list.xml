@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/rfaitemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pencil HB"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/rfaretrievedQuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="10"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:layout_marginRight="65dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:text="/"/>
+    <TextView
+        android:id="@+id/rfaneededQuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="11"/>
+    <TextView
+        android:id="@+id/rfatv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rfaitemName"
+        android:text="Stock "/>
+    <TextView
+        android:id="@+id/rfastock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rfaitemName"
+        android:layout_toRightOf="@id/rfatv1"
+        android:text="100"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/rfaitemCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rfaitemName"
+        android:layout_toRightOf="@id/rfastock"
+        android:text="999"
+        android:textColor="?android:colorBackground"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

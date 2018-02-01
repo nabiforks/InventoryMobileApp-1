@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:stretchColumns="1"
+        android:background="@color/colorPrimary">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/adTvHeaderDepartment"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/adTvHeaderNeededQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Needed"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:paddingRight="10dp"
+                android:layout_gravity="right"/>
+            <TextView
+                android:id="@+id/adTvHeaderDisbursedQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="10dp"
+                android:text="Disbursing"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

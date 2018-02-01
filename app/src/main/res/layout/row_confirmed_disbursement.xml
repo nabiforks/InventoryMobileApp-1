@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/dsRowDepartmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Institute of Systems Science"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/dsRowCollectionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="processing"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:id="@+id/dsRowRepresentative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dsRowDepartmentName"
+        android:text="Institute of Systems Science"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

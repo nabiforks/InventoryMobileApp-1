@@ -1,4 +1,4 @@
-package team8.inventorymobileapp.com.inventorymobileapp;
+package team8.inventorymobileapp.com.inventorymobileapp.Entities;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

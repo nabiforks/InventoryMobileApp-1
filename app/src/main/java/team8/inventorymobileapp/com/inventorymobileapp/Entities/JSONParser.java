@@ -1,4 +1,4 @@
-package team8.inventorymobileapp.com.inventorymobileapp;
+package team8.inventorymobileapp.com.inventorymobileapp.Entities;
 
 import android.util.Log;
 

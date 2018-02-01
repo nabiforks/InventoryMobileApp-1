@@ -1,3 +1,86 @@
 <resources>
     <string name="app_name">InventoryMobileApp</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">User id or password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="buttonAcknowledge">Acknowledge Disbursement</string>
+    <string name="CpName">Collection Point</string>
+    <string name="DeptName">Department Name</string>
+    <string name="RepName">Representative Name</string>
+    <string name="DisburseCode">Disbursement Code</string>
+    <string name="Status">Status</string>
+    <string name="Item">Item Name</string>
+    <string name="NeededQuantity">Needed Quantity</string>
+    <string name="ActualQuantiy">Actual Quantity</string>
+    <string name="DisbursementList">Disbursement List</string>
+    <string name="DisbursementDetails">Disbursement Details</string>
+    <string name="AdjustmentCode">Adjustment Code:</string>
+    <string name="ItemCode">Item Code:</string>
+    <string name="Price">Price:</string>
+    <string name="AdjustmentQuant">Adjust Quantity:</string>
+    <string name="Reason">Reason:</string>
+    <string name="Remark">Remark:</string>
+    <string name="Stock">Stock:</string>
+    <string name="Approve">Approve</string>
+    <string name="Reject">Reject</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="SupervisorOption1">PendingPO</string>
+    <string name="SupervisorOption2">Adjustment</string>
+    <string name="Logout">Logout</string>
+    <string name="title_activity_list_req">Pending Request</string>
+    <string name="title_activity_request_detail">Request Detail</string>
+    <string name="btnApprove">Approve</string>
+    <string name="btnReject">Reject</string>
+    <string name="RequestRemark">You can add some remark here:</string>
+    <string name="DepartmentOption1">Assign Authority</string>
+    <string name="DepartmentOption2">View Assign Authority</string>
+    <string name="DepartmentOption3">Request</string>
+    <string name="ClerkOption1">Request List</string>
+    <string name="ClerkOption2">Retrieval</string>
+    <string name="ClerkOption3">Allocation</string>
+    <string name="ClerkOption4">Disbursement Date</string>
+    <string name="ClerkOption5">Disbursement Form</string>
+    <string name="Home">Home</string>
+
+    <string name="rdDescription">Description</string>
+    <string name="rdLocation">Location</string>
+    <string name="rdNeeded">Quantity needed</string>
+    <string name="rdRetrieved">Quantity retrieved</string>
+    <string name="rdNotes">Notes</string>
+    <string name="rdStock">Stock</string>
+    <string name="rdItemCode">Item code</string>
+    <string name="collectiondate">Collection date</string>
+    <string name="dfDepartmentName">Department name</string>
+    <string name="dfCollectionPoint">Collection point</string>
+    <string name="dfRepName">Representative</string>
+    <string name="dfDisburseCode">Disbursement code</string>
+    <string name="dfStatus">Status</string>
+    <string name="dfBtnNotCollected">Mark As Not Collected</string>
+    <string name="ddItemName">Item name</string>
+    <string name="ddRequestCode">Request code</string>
+    <string name="ddQuantityNeeded">Needed</string>
+    <string name="ddQuantityRetrieved">Retrieved</string>
+    <string name="ddQuantityActual">Received</string>
+    <string name="disbursement">Disbursement</string>
+    <string name="EmployeeName">EmployeeName</string>
+    <string name="EmployeeCode">EmployeeCode</string>
+    <string name="Role">Role</string>
+    <string name="StartDate">StartDate</string>
+    <string name="EndDate">EndDate</string>
 </resources>
