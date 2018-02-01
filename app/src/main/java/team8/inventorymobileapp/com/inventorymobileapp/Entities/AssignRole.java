@@ -161,7 +161,7 @@ public class AssignRole extends java.util.HashMap<String,String>
         String result=JSONParser.postStream(host+"/Add/"+email+"/"+password,jassignrole.toString());
 
         Log.d("yf",result);
-        return  result;
+        return  result.toString();
 
     }
 

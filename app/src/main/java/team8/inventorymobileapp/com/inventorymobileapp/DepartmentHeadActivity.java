@@ -60,6 +60,9 @@ public class DepartmentHeadActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.option0:
+                startActivity(new Intent(this, DepartmentHeadActivity.class));
+                return(true);
             case R.id.option1:
                 startActivity(new Intent(this, ListRequestActivity.class));
                 return(true);

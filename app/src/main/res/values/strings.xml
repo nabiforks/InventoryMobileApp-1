@@ -48,9 +48,9 @@
     <string name="btnApprove">Approve</string>
     <string name="btnReject">Reject</string>
     <string name="RequestRemark">You can add some remark here:</string>
-    <string name="DepartmentOption1">Assign Authority</string>
+    <string name="DepartmentOption1">Request</string>
     <string name="DepartmentOption2">View Assign Authority</string>
-    <string name="DepartmentOption3">Request</string>
+    <string name="DepartmentOption3">Assign Authority</string>
     <string name="ClerkOption1">Request List</string>
     <string name="ClerkOption2">Retrieval</string>
     <string name="ClerkOption3">Allocation</string>

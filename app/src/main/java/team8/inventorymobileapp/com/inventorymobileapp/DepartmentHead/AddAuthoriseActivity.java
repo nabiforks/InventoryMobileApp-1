@@ -2,6 +2,7 @@ package team8.inventorymobileapp.com.inventorymobileapp.DepartmentHead;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -175,22 +176,25 @@ public class AddAuthoriseActivity extends DepartmentHeadActivity implements OnCl
                     new AsyncTask<AssignRole, Void, String>() {
                         @Override
                         protected String doInBackground(AssignRole... params) {
-                            AssignRole.addAssignRole(params[0],user.getEmail(),user.getPassword());
-                            return null;
+                           return AssignRole.addAssignRole(params[0],user.getEmail(),user.getPassword());
+
                         }
                         @Override
                         protected void onPostExecute(String result) {
+
+                            String substr=result.substring(1,6);
                             Log.i("result",result);
-                            if(result=="false"){
-                                txtMessage.setText("Already assigned!!!");
+                            if("false".equals(substr)){
+                                txtMessage.setText("Already present for this period.");
                             }
                             else
                             {
                                 Toast t = Toast.makeText(getApplicationContext(),
                                         "You have approved the authorise!", Toast.LENGTH_SHORT);
                                 t.show();
-                                // Intent launchActivity1= new Intent(AddAuthorise.this,AuthoriseStaffActitvity.class);
-                                //startActivity(launchActivity1);
+                                 Intent launchActivity1= new Intent(AddAuthoriseActivity.this,AuthoriseStaffActitvity.class);
+                                startActivity(launchActivity1);
+                                finish();
 
                             }}
                     }.execute(assignRole);
