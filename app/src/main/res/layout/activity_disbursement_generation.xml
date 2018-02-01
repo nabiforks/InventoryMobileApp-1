@@ -6,7 +6,15 @@
     android:layout_height="wrap_content"
     android:padding="5dp"
     tools:context="team8.inventorymobileapp.com.inventorymobileapp.DisbursementGenerationActivity">
-
+    <TextView
+        android:id="@+id/lblTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="Disbursement Confirmation"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
     <TextView
         android:id="@+id/dgTvwLabel"
         android:layout_marginTop="100dp"

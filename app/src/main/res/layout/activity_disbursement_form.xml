@@ -5,12 +5,21 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:padding="5dp">
-
+    <TextView
+        android:id="@+id/lblTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="Disbursement Form"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        >
 
         <TableRow
             android:layout_width="match_parent"
@@ -122,7 +131,7 @@
             <ListView
                 android:id="@+id/dfLvDisbursementDetail"
                 android:layout_width="355dp"
-                android:layout_height="250dp"
+                android:layout_height="200dp"
                 android:layout_span="2" />
         </TableRow>
         <TableRow>

@@ -13,6 +13,7 @@ public class User {
     private   String email;
     private String password;
     private  String role;
+    private String empName;
 
     private  String deptId;
 
@@ -28,6 +29,17 @@ public class User {
         sharedPreferences.edit().putString("userdata",userName).commit();
         password=password;
     }*/
+    public String getEmpName() {
+        empName =   sharedPreferences.getString("empName","");
+        return empName;
+    }
+
+    public  void setEmpName(String empName)
+    {
+        this.empName =  empName;
+        sharedPreferences.edit().putString("empName",empName).commit();
+    }
+
     public String getRole() {
         role =   sharedPreferences.getString("role","");
         return role;

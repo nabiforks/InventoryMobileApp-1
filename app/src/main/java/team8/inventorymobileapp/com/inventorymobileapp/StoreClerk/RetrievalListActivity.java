@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -28,6 +29,9 @@ public class RetrievalListActivity extends StoreClerkActivity implements Adapter
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrieval_list);
         user =     new User(RetrievalListActivity.this);
+
+        final ImageView imNotFound = findViewById(R.id.rfaIvNotFound);
+
         final TextView tvwNotification = findViewById(R.id.rfaNotification);
         tvwNotification.setText("");
 
@@ -46,6 +50,7 @@ public class RetrievalListActivity extends StoreClerkActivity implements Adapter
                 super.onPostExecute(result);
                 if (result.size()==0){
                     tvwNotification.setText("There is no active retrieval at the moment.");
+                    imNotFound.setVisibility(View.VISIBLE);
                     btnConfirmRetrieval.setText("Proceed to Allocation>");
                     TextView tvRetrieved = findViewById(R.id.rfaTvRetrieved);
                     tvRetrieved.setText("");

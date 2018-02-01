@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -34,6 +35,8 @@ public class AllocationListActivity extends StoreClerkActivity implements Adapte
         final TextView tvwInfo = findViewById(R.id.alTvInfo);
         tvwInfo.setText("");
 
+        final ImageView imNotFound = findViewById(R.id.rfaIvNotFound);
+
         final ListView lvRetrieval = (ListView) findViewById(R.id.lvRetrieval);
         lvRetrieval.setOnItemClickListener(this);
 
@@ -48,6 +51,7 @@ public class AllocationListActivity extends StoreClerkActivity implements Adapte
                 super.onPostExecute(result);
                 if (result.size()==0){
                     tvwInfo.setText("There is no allocation at the moment.");
+                    imNotFound.setVisibility(View.VISIBLE);
                     TextView tvRetrieved = findViewById(R.id.rfaTvRetrieved);
                     tvRetrieved.setText("");
                     TextView tvNeeded = findViewById(R.id.rfaTvNeeded);

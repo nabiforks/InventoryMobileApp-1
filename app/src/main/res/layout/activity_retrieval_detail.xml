@@ -5,7 +5,9 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:padding="5dp">
-
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,6 +15,15 @@
         android:layout_alignParentTop="true"
         android:stretchColumns="1">
 
+        <TableRow>
+            <ImageView
+                android:layout_span="2"
+                android:id="@+id/rdMap"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                />
+        </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -22,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rdDescription"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/rdEtxDescription"
@@ -43,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rdLocation"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/rdEtxLocation"
@@ -63,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rdStock"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/rdEtxStock"
@@ -84,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rdNeeded"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/rdEtxNeeded"
@@ -105,7 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rdRetrieved"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/rdEtxRetrieved"
@@ -128,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rdNotes"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/rdEtxNotes"
@@ -139,7 +150,7 @@
                 android:inputType="textMultiLine"
                 android:paddingLeft="30dp"
                 android:selectAllOnFocus="false"
-                android:lines="5"
+                android:lines="2"
                 android:scrollbars="vertical"
                 android:singleLine="false" />
         </TableRow>
@@ -179,7 +190,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:paddingLeft="30dp"
+                android:paddingLeft="10dp"
                 android:selectAllOnFocus="true"
                 android:text="10"
                 android:enabled="false"
@@ -187,4 +198,5 @@
         </TableRow>
 
     </TableLayout>
+</ScrollView>
 </LinearLayout>

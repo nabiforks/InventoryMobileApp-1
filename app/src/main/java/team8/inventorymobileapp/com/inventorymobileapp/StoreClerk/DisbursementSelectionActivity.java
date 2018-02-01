@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -29,6 +30,9 @@ public class DisbursementSelectionActivity extends StoreClerkActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disbursement_selection);
         user =     new User(DisbursementSelectionActivity.this);
+
+        final ImageView imNotFound = findViewById(R.id.rfaIvNotFound);
+
         final TextView tvSelectCollectionPoint = findViewById(R.id.dsTvSelectCollectionPoint);
         final TextView tvSelectDepartment = findViewById(R.id.dsTvSelectDepartment);
         tvSelectDepartment.setVisibility(View.INVISIBLE);
@@ -84,6 +88,8 @@ public class DisbursementSelectionActivity extends StoreClerkActivity {
                 super.onPostExecute(result);
                 if (result.size()==0){
                     tvSelectCollectionPoint.setText("There is no Disbursement Collection");
+                    imNotFound.setVisibility(View.VISIBLE);
+
                 } else{
                     List<HashMap<String, String>> cpList = sClerkCtrl.getCollectionPointList(result);
                     BaseAdapter ba = new SimpleAdapter(DisbursementSelectionActivity.this, cpList, R.layout.row_collection_point, new String[]{"CollectionPoint"}, new int[]{R.id.dsRowCollectionPoint});

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -30,6 +31,9 @@ public class RequestListActivity extends StoreClerkActivity implements AdapterVi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_list);
         user =     new User(RequestListActivity.this);
+
+        final ImageView imNotFound = findViewById(R.id.rfaIvNotFound);
+
         final ListView lvRequest = (ListView) findViewById(R.id.lvRequest);
         final TextView tvwNotification = findViewById(R.id.rfaNotification);
         tvwNotification.setText("");
@@ -46,6 +50,7 @@ public class RequestListActivity extends StoreClerkActivity implements AdapterVi
                 super.onPostExecute(result);
                 if (result.size()==0){
                     tvwNotification.setText("There is no outstanding requests at the moment");
+                    imNotFound.setVisibility(View.VISIBLE);
                 } else{
                     BaseAdapter ba = new SimpleAdapter(RequestListActivity.this, result, R.layout.row_request_list, new String[]{"RequestCode", "DepartmentName", "Status"}, new int[]{R.id.rlRowrequestCode, R.id.rlRowdepartmentName, R.id.rlRowstatus});
                     lvRequest.setAdapter(ba);

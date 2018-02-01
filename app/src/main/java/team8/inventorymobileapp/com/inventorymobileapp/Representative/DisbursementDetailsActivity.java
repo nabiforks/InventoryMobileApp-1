@@ -30,12 +30,15 @@ public class DisbursementDetailsActivity extends AppCompatActivity {
     User user = null;
     int[] ids = {R.id.tvCollectionPoint, R.id.tvDepartmentName , R.id.tvReprsentativeName, R.id.tvDisbursementNumber, R.id.tvstatus};
     String[] keys = {"CollectionPointName", "DepartmentName", "RepName", "DisbursementCode", "Status"};
-
+    String userName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disbursement_details);
         user =  new User(DisbursementDetailsActivity.this);
+        userName = user.getEmail();
+
+
         final ListView lv = (ListView) findViewById(R.id.listview1);
         ViewGroup headerView = (ViewGroup) getLayoutInflater().inflate(R.layout.headerlayout, lv, false);
         lv.addHeaderView(headerView);
@@ -53,6 +56,8 @@ public class DisbursementDetailsActivity extends AppCompatActivity {
 
                 @Override
                 protected void onPostExecute(ArrayList<DisbursementDetails> result) {
+                    Log.i("userName",user.getEmail());
+                    result.get(0).put("RepName",user.getEmpName());
                     //display the disbursement details info
                     for (int i = 0; i < keys.length; i++) {
                         TextView e = (TextView) findViewById(ids[i]);
@@ -74,8 +79,6 @@ public class DisbursementDetailsActivity extends AppCompatActivity {
                 disbursement.put("Status","completed");
                 disbursement.put("DisbursementCode",id);
                 //SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-                String userName = user.getEmail();
-
                 disbursement.put("RepName",userName);
                 new AsyncTask<Disbursement, Void, Void>() {
                     @Override

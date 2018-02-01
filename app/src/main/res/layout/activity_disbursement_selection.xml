@@ -5,12 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    tools:context="team8.inventorymobileapp.com.inventorymobileapp.DisbursementSelectionActivity">
-
+    tools:context="team8.inventorymobileapp.com.inventorymobileapp.StoreClerk.DisbursementSelectionActivity">
+    <TextView
+        android:id="@+id/lblTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="Disbursement List"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+    <ImageView
+        android:id="@+id/rfaIvNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/notification_notfound"
+        android:visibility="gone"/>
     <TextView
         android:id="@+id/dsTvSelectCollectionPoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblTitle1"
         android:text="Please select a collection point"
         android:textColor="@color/colorPrimary"
         android:textSize="18dp"/>

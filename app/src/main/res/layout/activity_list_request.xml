@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="team8.inventorymobileapp.com.inventorymobileapp.DepartmentHead.ListRequestActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="5dp">
 
     <TextView
         android:id="@+id/lblTitle1"

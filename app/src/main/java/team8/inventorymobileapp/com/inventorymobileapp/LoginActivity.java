@@ -280,6 +280,7 @@ public class LoginActivity extends AppCompatActivity {
                      user.setEmail(mEmail);
                      user.setPassword(mPassword);
                      user.setDeptId(loginResult.getString("DepartmentCode"));
+                     user.setEmpName(loginResult.getString("EmpName"));
                      role=loginResult.getString("RoleCode");
                      user.setRole(role);
                      Log.i("Loot at me ",user.toString());

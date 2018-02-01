@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">InventoryMobileApp</string>
+    <string name="app_name">SSIS Team 8</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
@@ -21,17 +21,17 @@
     <string name="DisburseCode">Disbursement Code</string>
     <string name="Status">Status</string>
     <string name="Item">Item Name</string>
-    <string name="NeededQuantity">Needed Quantity</string>
-    <string name="ActualQuantiy">Actual Quantity</string>
+    <string name="NeededQuantity">Needed</string>
+    <string name="ActualQuantiy">Actual</string>
     <string name="DisbursementList">Disbursement List</string>
     <string name="DisbursementDetails">Disbursement Details</string>
-    <string name="AdjustmentCode">Adjustment Code:</string>
-    <string name="ItemCode">Item Code:</string>
-    <string name="Price">Price:</string>
-    <string name="AdjustmentQuant">Adjust Quantity:</string>
-    <string name="Reason">Reason:</string>
-    <string name="Remark">Remark:</string>
-    <string name="Stock">Stock:</string>
+    <string name="AdjustmentCode">Adjustment Code</string>
+    <string name="ItemCode">Item Code</string>
+    <string name="Price">Price</string>
+    <string name="AdjustmentQuant">Adjust Quantity</string>
+    <string name="Reason">Reason</string>
+    <string name="Remark">Remark</string>
+    <string name="Stock">Stock</string>
     <string name="Approve">Approve</string>
     <string name="Reject">Reject</string>
     <string name="title_activity_main2">Main2Activity</string>
@@ -83,4 +83,5 @@
     <string name="Role">Role</string>
     <string name="StartDate">StartDate</string>
     <string name="EndDate">EndDate</string>
+    <string name="welcome">Welcome!</string>
 </resources>

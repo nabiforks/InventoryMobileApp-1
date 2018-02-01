@@ -3,11 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:scrollbars="vertical">
-
+    android:scrollbars="vertical"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/lblTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="Disbursement Details"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,14 +40,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/CpName"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textSize="15dp"
+                         />
 
                     <TextView
                         android:id="@+id/tvCollectionPoint"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dp"
                         android:layout_height="27dp"
-                        android:textSize="18sp" />
+                        android:textSize="15dp" />
                 </TableRow>
 
                 <TableRow
@@ -49,14 +59,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/DeptName"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textSize="15dp"
+                         />
 
                     <TextView
                         android:id="@+id/tvDepartmentName"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp" />
+                        android:textSize="15dp" />
                 </TableRow>
 
                 <TableRow
@@ -68,14 +78,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/RepName"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textSize="15dp"
+                         />
 
                     <TextView
                         android:id="@+id/tvReprsentativeName"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp" />
+                        android:textSize="15dp" />
                 </TableRow>
 
                 <TableRow
@@ -87,14 +97,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/DisburseCode"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textSize="15dp"
+                         />
 
                     <TextView
                         android:id="@+id/tvDisbursementNumber"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp" />
+                        android:textSize="15dp" />
                 </TableRow>
 
                 <TableRow
@@ -106,14 +116,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/Status"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textSize="15dp"
+                        />
 
                     <TextView
                         android:id="@+id/tvstatus"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp" />
+                        android:textSize="15dp" />
 
 
                 </TableRow>
@@ -122,14 +132,17 @@
             <ListView
                 android:id="@+id/listview1"
                 android:layout_width="match_parent"
-                android:layout_height="400dp" />
+                android:layout_height="270dp"
+                android:layout_marginTop="10dp"/>
 
             <Button
+                android:layout_gravity="right"
                 android:id="@+id/button"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:background="@color/colorPrimary"
                 android:text="@string/buttonAcknowledge"
+                android:textColor="@color/colorWhite"
                 android:textAlignment="center"
                 />
         </LinearLayout>

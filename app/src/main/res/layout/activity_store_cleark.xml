@@ -6,11 +6,19 @@
     android:layout_height="fill_parent"
     android:padding="5dp"
     android:background="@drawable/bg_dark_background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/welcome"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="20dp">
         <ImageButton
             android:id="@+id/wcSClerkRequestList"
             android:src="@drawable/ic_1_request_list"

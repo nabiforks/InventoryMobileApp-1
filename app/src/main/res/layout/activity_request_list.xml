@@ -6,7 +6,13 @@
     android:layout_height="match_parent"
     android:layout_marginRight="5dp"
     android:layout_marginLeft="5dp"
-    tools:context="team8.inventorymobileapp.com.inventorymobileapp.RequestListActivity">
+    tools:context="team8.inventorymobileapp.com.inventorymobileapp.StoreClerk.RequestListActivity">
+    <ImageView
+        android:id="@+id/rfaIvNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/notification_notfound"
+        android:visibility="gone"/>
     <TextView
         android:id="@+id/rfaNotification"
         android:layout_width="wrap_content"

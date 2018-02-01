@@ -19,14 +19,16 @@
                 android:id="@+id/text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="15dp"
+                android:text="Text 1"/>
 
             <TextView
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="15dp"
                 android:gravity="right"
+                android:text="Text 2"
                 />
         </TableRow>
 
@@ -38,7 +40,8 @@
                 android:id="@+id/text3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"/>
+                android:textSize="18dp"
+                android:text="Text3"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>

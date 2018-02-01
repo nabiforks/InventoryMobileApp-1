@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import team8.inventorymobileapp.com.inventorymobileapp.Entities.ProcessingRetrievalDetail;
@@ -50,6 +51,10 @@ public class RetrievalDetailActivity extends StoreClerkActivity implements View.
                 e.setText(rd.get(keys[i]));
             }
         }
+        ImageView imageView = findViewById(R.id.rdMap);
+        String imgName = rd.get("Location").toLowerCase();
+        int imgId = this.getResources().getIdentifier(imgName,"drawable", this.getPackageName());
+        imageView.setImageResource(imgId);
     }
 
     @Override
